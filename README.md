@@ -1,1 +1,1 @@
-# EricGusdorf.github.io
+This is a placeholder website
