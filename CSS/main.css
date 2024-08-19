@@ -70,19 +70,26 @@ html {
 
 .hero {
     width: 100%;
-    height: 100vh;
-    background: url('/img/Background\ Image.png');
+    height: 64.3vh;
     color: white;
 }
 
 .container {
-    width: 90%;
-    height: 100%;
-    max-width: 1000px;
+    width: 88.9%;
+    height: 643px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: radial-gradient(closest-side, #49265c, 
+    #2a0f3e, #06051c);
+}
+
+.container .info {
+    margin-left: 64px;
+    margin-right: 66px;
+    position: relative;
+    z-index: 1;
 }
 
 .container .info h1 {
@@ -116,28 +123,400 @@ html {
     color: #030712;
 }
 
-.container .info .sub-info {
+/* Location Information */
+.container .info .sub-info-1 {
+    width: 70%;
+    height: 24px;
+    display: flex;
     margin-top: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 7px;
 }
 
-.container .info .sub-info .location-row {
+.container .info .sub-info-1 .location-img {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+}
+
+.container .info .sub-info-1 .location-img img {
+    height: 24px;
+    width: 20px;
+    align-self: center;
+}
+
+.container .info .sub-info-1 .location-info {
+    width: 100%;
+    height: 100%;
+    padding-right: 10px;
+}
+
+.container .info .sub-info-1 .location-info p {
+    list-style: none;
+    margin-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    line-height: 20px;
     font-size: 1rem;
-    max-width: 70%;
-    color: #D1D5DB;
-    margin-bottom: 14px;
-
 }
 
-.container .info .sub-info .location-row .location-img {
-    width: 24;
-    height: 24;
+/* Availability Information */
+.container .info .sub-info-2 {
+    width: 70%;
+    height: 24px;
+    display: flex;
+    margin-top: 24px;
+    margin-bottom: 7px;
 }
 
-.container .info .sub-info .available-row {
+.container .info .sub-info-2 .green-dot-img {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+}
+
+.container .info .sub-info-2 .green-dot-img img {
+    height: 10px;
+    width: 10px;
+    align-self: center;
+}
+
+.container .info .sub-info-2 .availability-info {
+    width: 100%;
+    height: 100%;
+    padding-right: 10px;
+}
+
+.container .info .sub-info-2 .availability-info p {
+    list-style: none;
+    margin-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    line-height: 20px;
     font-size: 1rem;
-    max-width: 70%;
+}
+
+/*Hero Portrait*/
+/*.container .hero-portrait {
+    width: 80%;
+    float: right;
+    background-color: rgba(0, 255, 255, 0.171);
+    z-index: 2;
+}
+
+.container .hero-portrait .woman-animation-img {
+    width: 100%;
+    z-index: 2;
+
+}
+*/
+
+/* ABOUT SECTION */
+.about {
+    width: 100%;
+    height: 99.2vh;
     color: #D1D5DB;
+}
+
+.about-container {
+    height: 49.6rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #151127;
+}
+
+.about-container .about-info {
+    max-height: 40rem;
+    width: 88.9%;
+    margin-left: 80px;
+    margin-right: 80px;
+    position: relative;
+}
+
+.about-container .about-info h1 {
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+    text-align: center;
+}
+
+/*About Information*/
+.about-container .about-info .sub-info-about {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    width: 29.2rem;
+    max-height: 34.7rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#box1 {
+    margin-right: 2.4rem;
+    margin-left: 1.6rem;
+    height: 100%
+}
+
+#box1 img {
+    width: 100%
+}
+
+#box2 {
+    margin-right: 1.6rem;
+}
+
+#box2 p {
+    display: flex;
+    font-size: 1rem;
+}
+
+/* MY TOOLS SECTION */
+.mytools {
+    width: 100%;
+    height: 484px;
+    color: #D1D5DB;
+}
+
+.mytools-container {
+    height: 484px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mytools-container .mytools-info {
+    max-height: 40rem;
+    width: 88.9%;
+    margin-left: 80px;
+    margin-right: 80px;
+    position: relative;
+}
+
+.mytools-container .mytools-info h1 {
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+    text-align: center;
+}
+
+.mytools-container .mytools-info .sub-info-mytools {
+    display: flex;
+    justify-content: center;
+}
+
+.tool {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#tool1 {
+    background-color: rgb(228, 103, 103);
+}
+
+#tool2 {
+    background-color: rgb(228, 215, 103);
+}
+
+#tool3 {
+    background-color: rgb(103, 228, 145);
+}
+
+#tool4 {
+    background-color: rgb(103, 147, 228);
+}
+
+#tool5 {
+    background-color: rgb(168, 103, 228);
+}
+
+/* EXPERIENCE SECTION */
+.experience {
+    width: 100%;
+    height: 484px;
+    color: #D1D5DB;
+}
+
+.exp-container {
+    height: 484px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #151127;
+}
+
+.exp-container .exp-info {
+    max-height: 40rem;
+    width: 88.9%;
+    margin-left: 80px;
+    margin-right: 80px;
+    position: relative;
+}
+
+.exp-container .exp-info h1 {
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+    text-align: center;
+}
+
+.exp-container .exp-info .sub-info-exp {
+    display: flex;
+    justify-content: center;
+}
+
+.exp {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#exp1 {
+    background-color: rgb(228, 103, 103);
+}
+
+#exp2 {
+    background-color: rgb(228, 215, 103);
+}
+
+#exp3 {
+    background-color: rgb(103, 228, 145);
+}
+
+/* WORK SECTION */
+.work {
+    width: 100%;
+    height: 484px;
+    color: #D1D5DB;
+}
+
+.work-container {
+    height: 484px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-container .work-info {
+    max-height: 40rem;
+    width: 88.9%;
+    margin-left: 80px;
+    margin-right: 80px;
+    position: relative;
+}
+
+.work-container .work-info h1 {
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+    text-align: center;
+}
+
+.work-container .work-info .sub-info-work {
+    display: flex;
+    justify-content: center;
+}
+
+.project {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#proj1 {
+    background-color: rgb(228, 103, 103);
+}
+
+#proj2 {
+    background-color: rgb(228, 215, 103);
+}
+
+#proj3 {
+    background-color: rgb(103, 228, 145);
+}
+
+/* CONTACT SECTION */
+.contact {
+    width: 100%;
+    height: 484px;
+    color: #D1D5DB;
+}
+
+.contact-container {
+    height: 484px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #151127;
+}
+
+.contact-container .exp-info {
+    max-height: 40rem;
+    width: 88.9%;
+    margin-left: 80px;
+    margin-right: 80px;
+    position: relative;
+}
+
+.contact-container .contact-info h1 {
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+    text-align: center;
+}
+
+.contact-container .contact-info .sub-info-contact {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-box {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#cont1 {
+    background-color: rgb(228, 103, 103);
+}
+
+#cont2 {
+    background-color: rgb(228, 215, 103);
+}
+
+/* FOOTER SECTION */
+.footer-main {
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to right, #48255C, #A6B7F8);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-main-logo {
+    width: fit-content;
+    height: 100%;
+    padding-left: 20px;
+    display: flex;
+}
+
+.footer-main-logo img {
+    height: 40px;
+    align-self: center;
+}
+
+.footer-main .author {
+    justify-content: right;
 }
 
 @media only screen and (max-width: 768px) {
